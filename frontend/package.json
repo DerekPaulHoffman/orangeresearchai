@@ -1,0 +1,30 @@
+{
+  "name": "orangeresearch-frontend",
+  "version": "1.0.0",
+  "description": "Orange Research AI Chatbot Frontend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server public -p 8080 -c-1",
+    "build": "echo 'Build step for production'",
+    "deploy": "echo 'Deploy step'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "prettier": "^3.0.0",
+    "http-server": "^14.1.1"
+  },
+  "keywords": ["botonic", "chatbot", "react", "typescript"],
+  "author": "Orange Research AI",
+  "license": "MIT"
+} 
