@@ -1,9 +1,9 @@
-FROM node:20-alpine
+FROM node:20
 
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Only copy package.json to avoid lockfile issues
+COPY package.json ./
 
 # Install dependencies
 RUN npm install
@@ -14,5 +14,5 @@ COPY . .
 # Expose port
 EXPOSE 8080
 
-# Start development server
-CMD ["npm", "run", "dev"] 
+# Start Botonic development server
+CMD ["npm", "start"] 
